@@ -1,15 +1,21 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <div class="well well-md"><h1>Three Demo</h1></div>
+      <div class="well well-md">
+        <h1>Three Demo</h1>
+      </div>
     </div>
   </div>
   <div class="row">
     <div class="col-md-4">
-      <app-panel></app-panel>
+      <!-- <app-panel (onVote)="talk($event)"></app-panel> -->
+      <app-panel 
+      [coreController]="threejsComp.coreController" 
+      [threejs]="threejsComp.threejs"
+      ></app-panel>
     </div>
     <div class="col-md-8">
-      <app-three></app-three>
+      <app-three #threejsComp></app-three>
     </div>
   </div>
 </div>
