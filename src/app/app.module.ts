@@ -3,16 +3,23 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 import { AppComponent } from './app.component';
+import { ThreeComponent } from './three/three.component';
+import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ThreeComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
